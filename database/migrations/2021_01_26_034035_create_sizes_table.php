@@ -15,13 +15,13 @@ class CreateSizesTable extends Migration
     {
         Schema::create('sizes', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('size_id');
+            $table->unsignedBigInteger('product_id');
             $table->string('name');
             $table->timestamps();
 
-            $table->foreign('size_id')
+            $table->foreign('product_id')
                 ->references('id')
-                ->on('sizes');
+                ->on('products');
         });
     }
 

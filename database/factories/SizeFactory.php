@@ -22,7 +22,9 @@ class SizeFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->word,
+
+            'product_id' => rand(1,10)
         ];
     }
 }
