@@ -11,4 +11,7 @@
             Tienda online con productos fabricados en colombia
         </h3>
     </div>
+    <livewire:product-list>
+
+    </livewire:product-list>
 @endsection
